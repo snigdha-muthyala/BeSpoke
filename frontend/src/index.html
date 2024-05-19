@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeSpoke</title>
-    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+    <!-- <link rel="stylesheet" href="output.css"> -->
     <link rel="stylesheet" href="index.css">
 
 </head>
 <body class="w-full">
     <!-- navbar -->
-    <div name="navbar" class="w-full bg-yellow-50 p-6 flex justify-between items-center px-10">
+    <div name="navbar" class="w-full bg-[#000353] p-6 flex justify-between items-center px-10">
         <div class="w-1/3 flex items-center">
             <input type="text" placeholder="Search product" class="bg-white p-2 px-4 pr-12 rounded-l-lg"/>
-            <img src="assests/search.png" alt="search" class="bg-white w-10 p-2 rounded-r-lg" />
+            <img src="assests/search.png" alt="search" class="bg-white w-10 p-2 rounded-r-lg " />
         </div>
-        <div class="w-1/3 flex justify-center"><h1 class="text-3xl font-extrabold">BeSpoke</h1></div>
+        <div class="w-1/3 flex justify-center"><h1 class="text-3xl text-white font-extrabold">BeSpoke</h1></div>
         <div class="w-1/3 flex gap-2 justify-end px-10">
             <button>
-                <img src="./assests/user.png" alt="user" class="w-10 p-2"/>
+                <img src="./assests/user.png" alt="user" class="w-10 p-2 invert"/>
             </button>
-            <button><img src="./assests/heart.png" alt="wishlist" class="w-10 p-2" /></button>
-            <button><img src="./assests/shopping-cart.png" alt="account" class="w-10 p-2"/></button>
+            <button><img src="./assests/heart.png" alt="wishlist" class="w-10 p-2 invert" /></button>
+            <button><img src="./assests/shopping-cart.png" alt="account" class="w-10 p-2 invert"/></button>
         </div>
     </div>
     <!-- navbar2 -->
 
-    <div class="w-full gap-4 snig bg-yellow-50 p-2 items-center  flex justify-center">
+    <div class="w-full gap-4 snig bg-[#000353] text-white p-2 items-center  flex justify-center">
         <a href="#" class=" p-2 px-4 text-lg font-semibold">Home</a>
         <a href="#" class=" p-2 px-4 text-lg font-semibold">Shop</a>
         <a href="#" class=" p-2 px-4 text-lg font-semibold">Thrift</a>
@@ -42,30 +54,110 @@
 </div>
 
 <!-- about us -->
-<div class="w-full p-16 flex justify-center px-32 ">
-    <div class="w-1/2 p-4 flex flex-col justify-center items-center gap-5">
-        <div class="w-full bg-green-50 p-4 flex items-center justify-center gap-5">
+<div class="w-full p-16 flex justify-center gap-7 px-40 ">
+    <div class="w-1/2 flex flex-col justify-center items-center gap-5 ">
+        <div class="w-full flex items-center justify-center gap-5">
             <!-- box one about -->
-            <div class="w-1/2 bg-red-400 p-10 flex items-center"> 
-                <h1 class="text-4xl font-semibold">About Us!</h1>
+            <div class="w-1/2 h-full rounded-2xl p-10 flex items-center  relative cursor-pointer hover:scale-105 transition-all bg-gradient-to-r from-orange-100 to-amber-50/30"> 
+                <h1 class="text-6xl font-bold text-black">About Us!</h1>
             </div>
             <!-- box two -->
-            <div class="w-1/2 bg-red-400">
-                <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
+                <img class= "w-full h-[250px] rounded-2xl" src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1764 ">
+                <div class="absolute pb-8 top-4 flex flex-col h-full justify-between left-4">
+                    <h1 class="text-white text-2xl">New collections</h1>
+                    <h1 class="text-white text-md snig">Shop now </h1>
+                    
+                </div>
             </div>
         </div>
         <!-- box three -->
-        <div class="w-full bg-blue-200 p-14"></div>
+        <div class="w-full relative cursor-pointer hover:scale-105 transition-all">
+            <img class= "w-full h-[250px] rounded-2xl" src="./assests/ngo donation.jpg">
+            <div class=" bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
+                <h1 class="text-white text-3xl font-semibold">NGO Collaboration</h1>
+                <div class="flex items-center gap-2">
+                    <h1 class="text-white text-lg snig font-bold">Donate</h1>
+                    <img src="./assests/right-arrow.png" class="w-10 invert">
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w-1/2 bg-pink-300 p-8 flex justify-center gap-5"> 
+    <div class="w-1/2 flex justify-center gap-5"> 
         <!-- box four -->
-    <div class="w-1/2 bg-orange-500 p-14"></div>
+        <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
+            <img class= "w-full  rounded-2xl h-full" src="https://images.unsplash.com/photo-1675537057604-cafeef78a3d6?q=80&w=1887&">
+            <div class=" bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
+                <h1 class="text-white text-3xl font-semibold">Pre-Loved<br>Clothes</h1>
+                <div class="flex items-center gap-2">
+                    <h1 class="text-white text-lg snig font-bold">Discover now</h1>
+                    <img src="./assests/right-arrow.png" class="w-10 invert">
+                </div>
+            </div>
+        </div>
     <!-- box five -->
-    <div class="w-1/2 bg-orange-500 p-14">
-        <h1>snigdha</h1>
+    <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
+        <img class= "w-full h-full rounded-2xl" src="https://images.unsplash.com/photo-1598099947145-e85739e7ca28?q=80&w=2535
+        ">
+        <div class=" bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
+            <h1 class="text-white text-3xl font-semibold">Community</h1>
+            <div class="flex items-center gap-2">
+                <h1 class="text-white text-lg snig font-bold">check it out!</h1>
+                <img src="./assests/right-arrow.png" class="w-10 invert">
+            </div>
+        </div>
+    </div>  
+    </div>
+</div>  
+</div>
+
+<!-- why us -->
+<div class="w-full p-16 flex flex-col items-center gap-7 px-40" >
+    <h1 class="text-3xl font-semibold snig">Why shop with BeSpoke?</h1>
+    <div class="w-full flex gap-10">
+        <div class="w-1/3 gap-4 flex flex-col items-center p-4">
+        <img src="./assests/environmentalism.png" alt="eco" class="w-1/4" />
+        <h1 class="text-xl font-semibold">Eco Friendly</h1>
+        <p class="text-center">Our commitment to the environment is reflected in every aspect of our business. We use sustainable materials and eco-friendly production processes to reduce our carbon footprint and ensure a greener future.</p>
+    </div>
+        <div class="w-1/3 flex flex-col items-center gap-4 p-4">
+        <img src=
+        "assests/eco.png" alt="sustainable" class="w-1/4" />
+        <h1 class="text-xl font-semibold">Sustainable Clothing</h1>
+        <p class="text-center">Discover fashion that cares for the planet. Our collections are designed with longevity in mind, using high-quality, sustainable fabrics that are both stylish and kind to the environment.</p>
+    </div>
+        <div class="w-1/3 gap-4 flex flex-col items-center p-4">
+        <img src="assests/social-care.png" alt="eco" class="w-1/4" />
+        <h1 class="text-xl font-semibold">Supports Local Communities</h1>
+        <p class="text-center">We believe in giving back. By partnering with local artisans and small businesses, we support community development and promote fair trade practices, ensuring that your purchases make a positive impact.</p>
+    </div>
     </div>
 </div>
-   
-</div>
+
+ <!-- footer -->
+ <div class="w-full relative">
+    <img src="assests/footer.png" alt="footer" />
+ <div class="w-full absolute top-0 left-0 p-20 flex items-start">
+    <h1 class="text-6xl font-semibold text-white w-1/2 text-start">BeSpoke</h1>
+    <div class="w-1/2 flex items-center">
+        <div class="w-1/2 text-white snig flex flex-col">
+            <h1 class="font-semibold text-3xl">Menu</h1>
+            <a href="#">Shop</a>
+            <a href="#">Thrift</a>
+            <a href="#">community</a>
+            <a href="#">NGO Collaboration</a>
+        </div>
+        <div class="w-1/2 text-white snig flex flex-col">
+            <h1 class="font-semibold text-3xl">Social Profile</h1>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Whatsapp</a>
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+ </div>
+ </div>
+
+
 </body>
 </html>
