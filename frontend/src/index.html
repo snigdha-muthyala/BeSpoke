@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeSpoke</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -16,148 +18,151 @@
       }
     }
   </script>
-    <!-- <link rel="stylesheet" href="output.css"> -->
-    <link rel="stylesheet" href="index.css">
+  <title>Bespoke</title>
 </head>
+
 <body class="w-full">
-    <!-- navbar -->
-    <div name="navbar" class="w-full bg-blue-50 p-6 flex justify-between items-center px-10">
-        <div class="w-1/3 flex items-center">
-            <input type="text" placeholder="Search product" class="bg-white p-2 px-4 pr-12 rounded-l-lg"/>
-            <img src="assests/search.png" alt="search" class="bg-white w-10 p-2 rounded-r-lg " />
-        </div>
-        <div class="w-1/3 flex justify-center"><h1 class="text-3xl text-black font-extrabold">BeSpoke</h1></div>
-        <div class="w-1/3 flex gap-2 justify-end px-10">
-            <button>
-                <img src="./assests/user.png" alt="user" class="w-10 p-2 "/>
-            </button>
-            <button><img src="./assests/heart.png" alt="wishlist" class="w-10 p-2 " /></button>
-            <button><img src="./assests/shopping-cart.png" alt="account" class="w-10 p-2 "/></button>
-        </div>
+  <!-- Navbar -->
+  <div name="navbar" class="w-full bg-[#000353] p-6 flex justify-between items-center px-10">
+    <div class="w-1/3 flex items-center">
+      <input type="text" placeholder="Search" class="snig bg-white p-2 px-4 pr-12 rounded-l-lg" />
+      <img src="assets/search.png" alt="search" class="bg-white w-10 p-2 rounded-r-lg" />
     </div>
-    <!-- navbar2 -->
-
-    <div class="w-full gap-4 snig bg-blue-50 text-black p-2 items-center  flex justify-center">
-        <a href="#" class=" p-2 px-4 text-lg font-semibold">Home</a>
-        <a href="#" class=" p-2 px-4 text-lg font-semibold">Shop</a>
-        <a href="#" class=" p-2 px-4 text-lg font-semibold">Thrift</a>
-        <a href="#" class="p-2 px-4 text-lg font-semibold">Community</a>
-        <a href="#" class="p-2 px-4 text-lg font-semibold">NGO</a>
+    <div class="w-1/3 flex justify-center">
+      <h1 class="text-3xl text-white font-extrabold">BeSpoke</h1>
     </div>
+    <div class="w-1/3 flex gap-2 justify-end px-10">
+      <button>
+        <img src="./assets/user.png" alt="user" class="w-10 p-2 invert" />
+      </button>
+      <button>
+        <img src="./assets/heart.png" alt="user" class="w-10 p-2 invert" />
+      </button>
+      <button>
+        <img src="./assets/cart.png" alt="user" class="w-10 p-2 invert" />
+      </button>
+    </div>
+  </div>
 
+  <!-- Navbar 2 -->
+  <div class="p-2 w-full gap-4 snig bg-[#000353] text-white flex items-center justify-center ">
+    <a href="#" class="px-4 text-lg font-semibold">Home</a>
+    <a href="shop.html" class="px-4 text-lg font-semibold">Shop</a>
+    <a href="#" class="px-4 text-lg font-semibold">Thrift</a>
+    <a href="#" class="px-4 text-lg font-semibold">Community</a>
+    <a href="#" class="px-4 text-lg font-semibold">NGO</a>
+  </div>
 
-<!-- herosection -->
-<div class="w-full herosection flex gap-10 flex-col justify-end items-center" >
+  <!-- HeroSection -->
+  <div class="w-full herosection flex gap-10 flex-col justify-end items-center">
     <h1 class="text-8xl text-white font-semibold px-10 text-center bg-gradient-to-r from-slate-50 to-slate-50 bg-clip-text text-transparent">Wear the change you want to see in the world!</h1>
-    <h1 class="pb-16 text-4xl text-white snig-fo text-center">BeSpoke</h1>
-</div>
+    <h1 class="pb-16 text-4xl snig font-bold text-white text-center">BeSpoke</h1>
+  </div>
 
-<!-- about us -->
-<div class="w-full p-16 flex justify-center gap-7 px-40 ">
-    <div class="w-1/2 flex flex-col justify-center items-center gap-5 ">
-        <div class="w-full flex items-center justify-center gap-5">
-            <!-- box one about -->
-            <div class="w-1/2 h-full rounded-2xl p-10 flex items-center  relative cursor-pointer hover:scale-105 transition-all bg-gradient-to-r from-orange-100 to-amber-50/30"> 
-                <h1 class="text-6xl font-bold text-black">About Us!</h1>
-            </div>
-            <!-- box two -->
-            <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
-                <img class= "w-full h-[250px] rounded-2xl" src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1764 ">
-                <div class="absolute pb-8 top-4 flex flex-col h-full justify-between left-4">
-                    <h1 class="text-white text-2xl">New collections</h1>
-                    <div class="flex items-center gap-2">
-                    <h1 class="text-white text-md snig">Shop now </h1> <img src="./assests/right-arrow.png" class="w-10 invert">  
-                </div>
-                </div>
-            </div>
+  <!-- About us -->
+  <div class="w-full p-16 px-40 gap-5 flex justify-center">
+    <div class="w-1/2 flex flex-col justify-center items-center gap-5">
+      <div class="w-full flex items-center justify-center gap-5">
+        <!-- box one about -->
+        <div class="w-1/2 h-full rounded-2xl bg-gradient-to-r from-orange-100 to-amber-50/30 p-10 flex items-center">
+          <h1 class="text-6xl font-bold">About us</h1>
         </div>
-        <!-- box three -->
-        <div class="w-full relative cursor-pointer hover:scale-105 transition-all">
-            <img class= "w-full h-[250px] rounded-2xl" src="./assests/ngo donation.jpg">
-            <div class=" bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
-                <h1 class="text-white text-3xl font-semibold">NGO Collaboration</h1>
-                <div class="flex items-center gap-2">
-                    <h1 class="text-white text-lg snig font-bold">Donate</h1>
-                    <img src="./assests/right-arrow.png" class="w-10 invert">
-                </div>
-            </div>
+        <!-- box two -->
+        <a href="shop.html" class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
+          <img class="h-[250px] w-full rounded-2xl" src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1764"/>
+          <div class="absolute pb-8 top-4 flex flex-col h-full justify-between left-4">
+            <h1 class="text-2xl text-white">New Collections</h1>
+        
+            <h1 class="text-md snig text-white">Shop now</h1>
+          </div>
+        </a>
+      </div>
+      <!-- box three -->
+      <div class="w-full relative cursor-pointer hover:scale-105 transition-all">
+        <img class="h-[230px] w-full rounded-2xl" src="./assets/ngodonate.jpg"/>
+        <div class="bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
+          <h1 class="text-3xl font-semibold text-white">NGO Collaboration</h1>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg font-semibold snig text-white">Donate</h1>
+            <img src="./assets/right-arrow.png" class="w-8 invert"/>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="w-1/2 flex justify-center gap-5"> 
-        <!-- box four -->
-        <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
-            <img class= "w-full  rounded-2xl h-full" src="https://images.unsplash.com/photo-1675537057604-cafeef78a3d6?q=80&w=1887&">
-            <div class=" bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
-                <h1 class="text-white text-3xl font-semibold">Pre-Loved<br>Clothes</h1>
-                <div class="flex items-center gap-2">
-                    <h1 class="text-white text-lg snig font-bold">Discover now</h1>
-                    <img src="./assests/right-arrow.png" class="w-10 invert">
-                </div>
-            </div>
+    <div class="w-1/2 flex justify-center gap-5">
+      <!-- box four -->
+      <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
+        <img class="h-full w-full rounded-2xl" src="https://images.unsplash.com/photo-1675537057604-cafeef78a3d6?q=80&w=1887&"/>
+        <div class="bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
+          <h1 class="text-3xl font-semibold text-white">Pre-Loved <br> Clothes</h1>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg font-semibold snig text-white">Discover now</h1>
+            <img src="./assets/right-arrow.png" class="w-8 invert"/>
+          </div>
         </div>
-    <!-- box five -->
-    <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
-        <img class= "w-full h-full rounded-2xl" src="https://images.unsplash.com/photo-1598099947145-e85739e7ca28?q=80&w=2535
-        ">
-        <div class=" bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
-            <h1 class="text-white text-3xl font-semibold">Community</h1>
-            <div class="flex items-center gap-2">
-                <h1 class="text-white text-lg snig font-bold">check it out!</h1>
-                <img src="./assests/right-arrow.png" class="w-10 invert">
-            </div>
+      </div>
+      <!-- box five -->
+      <div class="w-1/2 relative cursor-pointer hover:scale-105 transition-all">
+        <img class="h-full w-full rounded-2xl" src="https://images.unsplash.com/photo-1598099947145-e85739e7ca28?q=80&w=2535"/>
+        <div class="bg-black/30 w-full p-4 top-0 left-0 rounded-2xl absolute flex flex-col h-full justify-between">
+          <h1 class="text-3xl font-semibold text-white">Community</h1>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg font-semibold snig text-white">Check it out</h1>
+            <img src="./assets/right-arrow.png" class="w-8 invert"/>
+          </div>
         </div>
-    </div>  
+      </div>
     </div>
-</div>  
-</div>
+  </div>
 
-<!-- why us -->
-<div class="w-full p-16 flex flex-col items-center gap-7 px-40" >
-    <h1 class="text-3xl font-semibold snig">Why shop with BeSpoke?</h1>
-    <div class="w-full flex gap-10">
-        <div class="w-1/3 gap-4 flex flex-col items-center p-4">
-        <img src="./assests/environmentalism.png" alt="eco" class="w-1/4" />
-        <h1 class="text-xl font-semibold">Eco Friendly</h1>
+  <!-- why us -->
+  <div class="w-full p-16 px-40 gap-10 flex flex-col items-center">
+    <h1 class="text-3xl font-semibold ">Why shop with Bespoke?</h1>
+    <div class="w-full flex gap-5">
+      <div class="w-1/3 gap-4 flex flex-col items-center p-4">
+        <img src="./assets/environmentalism.png" alt="eco" class="w-1/4"/>
+        <h1 class="text-2xl font-semibold">Eco Friendly</h1>
         <p class="text-center">Our commitment to the environment is reflected in every aspect of our business. We use sustainable materials and eco-friendly production processes to reduce our carbon footprint and ensure a greener future.</p>
-    </div>
-        <div class="w-1/3 flex flex-col items-center gap-4 p-4">
-        <img src=
-        "assests/eco.png" alt="sustainable" class="w-1/4" />
-        <h1 class="text-xl font-semibold">Sustainable Clothing</h1>
+      </div>
+      <div class="w-1/3 gap-4 flex flex-col items-center p-4">
+        <img src="./assets/eco.png" alt="eco" class="w-1/4"/>
+        <h1 class="text-2xl font-semibold">Sustainable Clothing</h1>
         <p class="text-center">Discover fashion that cares for the planet. Our collections are designed with longevity in mind, using high-quality, sustainable fabrics that are both stylish and kind to the environment.</p>
-    </div>
-        <div class="w-1/3 gap-4 flex flex-col items-center p-4">
-        <img src="assests/social-care.png" alt="eco" class="w-1/4" />
-        <h1 class="text-xl font-semibold">Supports Local Communities</h1>
+      </div>
+      <div class="w-1/3 gap-4 flex flex-col items-center p-4">
+        <img src="./assets/social-care.png" alt="eco" class="w-1/4"/>
+        <h1 class="text-2xl font-semibold">Support Local Communities</h1>
         <p class="text-center">We believe in giving back. By partnering with local artisans and small businesses, we support community development and promote fair trade practices, ensuring that your purchases make a positive impact.</p>
+      </div>
     </div>
-    </div>
-</div>
+  </div>
 
- <!-- footer -->
- <div class="w-full relative">
-    <img src="assests/footer.png" alt="footer" />
- <div class="w-full absolute top-0 left-0 p-20 flex items-start">
-    <h1 class="text-6xl font-semibold text-white w-1/2 text-start">BeSpoke</h1>
-    <div class="w-1/2 flex items-center">
+
+  <!-- footer -->
+  <div class="w-full relative">
+    <img src="./assets/footerimg.png" alt="footer" />
+    <div class="w-full absolute top-0 left-0 p-20 flex items-start">
+      <h1 class="text-6xl font-semibold text-white w-1/2 text-start">BeSpoke</h1>
+      <div class="w-1/2 flex items-center">
         <div class="w-1/2 text-white snig flex flex-col">
-            <h1 class="font-semibold text-3xl">Menu</h1>
-            <br>
-            <a href="#">Shop</a>
-            <a href="#">Thrift</a>
-            <a href="#">community</a>
-            <a href="#">NGO Collaboration</a>
+          <h1 class="font-semibold text-xl">Menu</h1>
+          <a href="shop.html">Shop</a>
+          <a href="#">Community</a>
+          <a href="#">Thrift</a>
+          <a href="#">NGO Collaboration</a>
         </div>
         <div class="w-1/2 text-white snig flex flex-col">
-            <h1 class="font-semibold text-3xl">Social Profile</h1>
-            <br>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Whatsapp</a>
-            <a href="#">YouTube</a>
+          <h1 class="font-semibold text-xl">Social Profiles</h1>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Whatsapp</a>
+          <a href="#">Youtube</a>
         </div>
+      </div>
     </div>
- </div>
- </div>
+  </div>
+
+
 </body>
+
 </html>

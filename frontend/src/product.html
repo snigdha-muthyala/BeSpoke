@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Bespoke</title>
+</head>
+
+<body>
+    <div name="navbar" class="w-full bg-blue-50 p-6 flex justify-between items-center px-10">
+        <div class="w-1/3 flex items-center">
+            <input type="text" placeholder="Search" class="snig bg-white p-2 px-4 pr-12 rounded-l-lg" />
+            <img src="assets/search.png" alt="search" class="bg-white w-10 p-2 rounded-r-lg" />
+        </div>
+        <div class="w-1/3 flex justify-center">
+            <h1 class="text-3xl text-black font-extrabold">BeSpoke</h1>
+        </div>
+        <div class="w-1/3 flex gap-2 justify-end px-10">
+            <button>
+                <img src="./assets/user.png" alt="user" class="w-10 p-2 invert-0" />
+            </button>
+            <button>
+                <img src="./assets/heart.png" alt="user" class="w-10 p-2 invert-0" />
+            </button>
+            <button>
+                <img src="./assets/cart.png" alt="cart" class="w-10 p-2 invert-0"
+                    onclick="window.location.href='cart.html'" />
+            </button>
+        </div>
+    </div>
+    <!-- Navbar 2 -->
+    <div class="p-2 w-full gap-4 snig bg-blue-50 text-black flex items-center justify-center ">
+        <a href="index.html" class="px-4 text-lg font-semibold">Home</a>
+        <a href="shop.html" class="px-4 text-lg font-semibold">Shop</a>
+        <a href="#" class="px-4 text-lg font-semibold">Thrift</a>
+        <a href="#" class="px-4 text-lg font-semibold">Community</a>
+        <a href="#" class="px-4 text-lg font-semibold">NGO</a>
+    </div>
+
+    <!-- Product -->
+    <div class="w-full flex items-center justify-center p-14">
+        <div class="w-[80%] flex items-start gap-5 ">
+            <div class="left w-1/2">
+                <img id="product-image" src="" alt="product" class="w-4/5 rounded-2xl" />
+            </div>
+            <div class="right w-1/2 flex flex-col gap-5 snig p-8 items-start ">
+                <h1 id="product-name" class="text-5xl font-semibold"></h1>
+                <h1 id="product-price" class="text-3xl font-semibold"></h1>
+                <div class="w-full flex items-center gap-2">
+                    <button
+                        class="bg-blue-50 hover:bg-[#000353] hover:text-white transition-all p-2 px-4 rounded-lg">S</button>
+                    <button
+                        class="bg-blue-50 hover:bg-[#000353] hover:text-white transition-all p-2 px-4 rounded-lg">M</button>
+                    <button
+                        class="bg-blue-50 hover:bg-[#000353] hover:text-white transition-all p-2 px-4 rounded-lg">L</button>
+                    <button
+                        class="bg-blue-50 hover:bg-[#000353] hover:text-white transition-all p-2 px-4 rounded-lg">XL</button>
+                </div>
+                <div class="w-full flex py-6 items-center gap-5">
+                    <button onclick="addToCart()"
+                        class="bg-[#000353] text-xl hover:bg-blue-50 hover:text-black text-white transition-all p-2 px-4 rounded-lg">Add
+                        to cart</button>
+                    <button
+                        class="bg-blue-50 text-xl hover:bg-[#000353] hover:text-white transition-all p-2 px-4 rounded-lg">Wishlist</button>
+                </div>
+                <hr class="w-full border-black/80" />
+                <h1>PRODUCT DETAILS</h1>
+                <p id="product-description"></p>
+                <p id="product-details"></p>
+                <hr class="w-full border-black/80" />
+                <div class="w-full flex flex-col gap-2">
+                    <p>100% Original Products</p>
+                    <p>Pay on delivery might be available</p>
+                    <p>Easy 14 days returns and exchanges</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full relative">
+        <img src="./assets/footerimg.png" alt="footer" />
+        <div class="w-full absolute top-0 left-0 p-20 flex items-start">
+            <h1 class="text-6xl font-semibold text-white w-1/2 text-start">BeSpoke</h1>
+            <div class="w-1/2 flex items-center">
+                <div class="w-1/2 text-white snig flex flex-col">
+                    <h1 class="font-semibold text-xl">Menu</h1>
+                    <a href="#">Shop</a>
+                    <a href="#">Community</a>
+                    <a href="#">Thrift</a>
+                    <a href="#">NGO Collaboration</a>
+                </div>
+                <div class="w-1/2 text-white snig flex flex-col">
+                    <h1 class="font-semibold text-xl">Social Profiles</h1>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Whatsapp</a>
+                    <a href="#">Youtube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let product;
+
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        async function fetchAndRenderProductDetails() {
+            const productId = getUrlParameter('id');
+            const response = await fetch('clothes.json');
+            const products = await response.json();
+            product = products.find(p => p.id == productId);
+
+            if (product) {
+                document.getElementById('product-image').src = product.image;
+                document.getElementById('product-name').innerText = product.name;
+                document.getElementById('product-price').innerText = `Rs. ${product.price}`;
+                document.getElementById('product-description').innerText = product.description;
+                document.getElementById('product-details').innerHTML = product.details;
+            }
+        }
+
+        window.onload = fetchAndRenderProductDetails;
+
+        function addToCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const productIndex = cart.findIndex(item => item.id === product.id);
+
+            if (productIndex > -1) {
+                cart[productIndex].quantity += 1;
+            } else {
+                cart.push({ id: product.id, name: product.name, price: product.price, image: product.image, quantity: 1 });
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            // alert('Product added to cart!');
+            showToast('Product added to cart!');
+        }
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed top-4 right-4 bg-green-500 text-white p-3 rounded-lg shadow-lg';
+            toast.innerText = message;
+
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 5000);
+        }
+    </script>
+</body>
+
+</html>

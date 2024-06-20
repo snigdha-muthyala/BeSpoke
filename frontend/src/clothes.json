@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "Pink Dress",
+    "price": 9999,
+    "image": "https://littleboxindia.com/cdn/shop/files/1ea475b61f70be5e45473b07d36fd5f6_540x.jpg?v=1716484748",
+    "description": "Introducing Mesh Solid Ruched Hot Pink Midi Dress. Made from soft, breathable mesh fabric, this dress is both comfortable and stylish.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Sleeveless<br>Length: Midi<br>Style: Daily, Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 2,
+    "name": "Jacob & co.",
+    "price": 59999,
+    "image": "https://i.pinimg.com/736x/c2/ca/76/c2ca7619eaf07c0d539f8e035aae010b.jpg",
+    "description": "Elegant red shirt perfect for formal and casual occasions.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Long Sleeve<br>Length: Regular<br>Style: Formal<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 3,
+    "name": "Long Sleeve",
+    "price": 4999,
+    "image": "https://littleboxindia.com/cdn/shop/products/3950ef039be96d1f39bc797bfdd2269d_540x.jpg?v=1704378342",
+    "description": "Comfortable and stylish blue jeans made from high-quality denim.",
+    "details": "Fit Type: Slim<br>Pattern Type: Solid<br>Length: Full<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 4,
+    "name": "Abercrombie",
+    "price": 7999,
+    "image": "https://img.abercrombie.com/is/image/anf/KIC_144-4078-0107-900_prod1?policy=product-medium",
+    "description": "Classic black trousers made from high-quality fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Length: Full<br>Style: Formal<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 5,
+    "name": "Jacket",
+    "price": 1999,
+    "image": "https://img.abercrombie.com/is/image/anf/KIC_144-4978-0037-400_prod1.jpg?policy=product-large",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 6,
+    "name": "Shirt",
+    "price": 3999,
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fc9%2F46%2Fc946672a50ecf260e1cdaa9ca65d91ee2607c133.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 7,
+    "name": "White T-Shirt",
+    "price": 999,
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd4%2F5c%2Fd45c07e71d9deb5f8396c07bff203daf151ab17c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 8,
+    "name": "Blue Jeans",
+    "price": 2999,
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F5d%2F94%2F5d94f3a00a90c6bf58ea7936ca59fbcde679a4ce.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 9,
+    "name": "Black Trousers",
+    "price": 3999,
+    "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F0a%2Fc0%2F0ac0d702cbe68e4f1bb4f0e7b7d97fe18bbad560.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 10,
+    "name": "Black Trousers",
+    "price": 3999,
+    "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2Fd9%2F6e%2Fd96e09e345c22033cc8efb73d22871b97765239d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 11,
+    "name": "Lacoste",
+    "price": 3999,
+    "image": "https://www.lacoste.in/media/catalog/product/p/f/pf5462_yup_24.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=900&width=900&canvas=900:900",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 12,
+    "name": "Sweatshirt",
+    "price": 2599,
+    "image": "https://www.lacoste.in/media/catalog/product/a/h/ah1953_166_24.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=900&width=900&canvas=900:900",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 13,
+    "name": "Lacoste dunks",
+    "price": 3999,
+    "image": "https://www.lacoste.in/media/catalog/product/4/6/46sma0055_02h_01.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=900&width=900&canvas=900:900",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 14,
+    "name": "Belt",
+    "price": 3999,
+    "image": "https://www.lacoste.in/media/catalog/product/r/c/rc4094_n14_24_14.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=900&width=900&canvas=900:900",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 15,
+    "name": "White Tshirt",
+    "price": 3999,
+    "image": "https://www.lacoste.in/media/catalog/product/d/h/dh7311_001_24.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=900&width=900&canvas=900:900",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 16,
+    "name": "Nike Jordan 1",
+    "price": 3999,
+    "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bb5e235a-9096-44cd-af79-f8f09da6683c/air-jordan-1-retro-high-og-latte-shoes-fTHb42.png",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 17,
+    "name": "Jumpsuit",
+    "price": 3999,    
+    "image": "https://littleboxindia.com/cdn/shop/files/737fc652deaa95d59a5e52d1ca979078_540x.jpg?v=1711993951",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 18,
+    "name": "Nike Precision 7",
+    "price": 3999,
+    "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2599bc05-e25a-4f30-9ac2-faa15c3c482e/precision-7-basketball-shoes-6FvJHX.png",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 19,
+    "name": "Backpack",
+    "price": 3999,
+    "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4d26331d-864e-489d-8540-57082b4ca613/sportswear-backpack-ShhQ1r.png",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 20,
+    "name": "Air Max 90",
+    "price": 3999,
+    "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/wzitsrb4oucx9jukxsmc/air-max-90-shoes-mnCmVT.png",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 21,
+    "name": "Brown Trousers",
+    "price": 3999,
+    "image": "https://img101.urbanic.com/v1/goods-pic/1ff3329b96dc48b3ac470dea1528eb50UR_w1440_q90.webp",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 22,
+    "name": "Red Jumpsuit",
+    "price": 8999,
+    "image": "https://img101.urbanic.com/v1/goods-pic/d84163508b83483bae2403a6c5de1a3cUR_w1440_q90.webp",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 23,
+    "name": "Blue Jeans",
+    "price": 3999,
+    "image": "https://img101.urbanic.com/v1/goods-pic/45c17ab603404a5281c0850ec42442c8UR_w1440_q90.webp",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  },
+  {
+    "id": 24,
+    "name": "Dress",
+    "price": 3999,
+    "image": "https://img101.urbanic.com/v1/goods-pic/d7ae786d43a446668405f492039820d2UR_w1440_q90.webp",
+    "description": "Simple and stylish white t-shirt made from soft, breathable fabric.",
+    "details": "Fit Type: Regular<br>Pattern Type: Solid<br>Sleeve Style: Short Sleeve<br>Length: Regular<br>Style: Casual<br>Care Instructions: Machine Wash",
+    "link": "product.html"
+  }
+]
